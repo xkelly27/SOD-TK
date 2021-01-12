@@ -1,8 +1,8 @@
 				
 
-				   [OneDrive Data Management Tool | UCOL]
+				          [OneDrive Tool | UCOL]
 
-				        --Last updated: Jan 4 2021--
+				         --Last updated: Jan 11 2021--
 
     
 					       DESCRIPTION
@@ -29,7 +29,7 @@
 			-> code (!)			|	
 				-> ado (!)		|	
 				-> app_v1 (!)		|	
-			-> main_data (r)			|	
+			-> main_data (r)		|	
 			-> output (r)			|
 			-> reports (r)			|
 		-> ** other files **			|
