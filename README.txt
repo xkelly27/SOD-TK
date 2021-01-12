@@ -43,7 +43,7 @@
 	command log - if this doesn't work, the shared library is most likely not in the correct
 	path. See 2. in the DESCRIPTION section.
 	
-	Once successfully linked, type "ucol open" to open the user interface (dialog box). (note: reports tab in progress)
+	Once successfully linked, type "ucol open" to open the UI (dialog box).
 
 					
 					LINK STATA AUTOMATICALLY ON STARTUP
