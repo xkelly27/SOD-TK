@@ -1,0 +1,134 @@
+VERSION 12
+POSITION . . 440 420
+
+
+// -----------------------------------------------------------------------------
+// LISTS
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// MAIN PAGE BUTTONS
+// =============================================================================
+OK ok1,      label("OK")
+CANCEL can1, label("Cancel")
+SUBMIT sub1, label("Submit")
+RESET res1
+
+
+// -----------------------------------------------------------------------------
+// GENERAL SCRIPTS
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// DYNAMIC DOCUMENT TAB
+// =============================================================================
+
+
+
+
+DIALOG main, label("UCOL Data Management Tool") tabtitle("Data")
+BEGIN
+	//define the source value
+	
+	//FRAME box        10   72   310    30
+	
+	// Browse SMCL or DO file
+	// -------------------------------------------------------------------------
+	TEXT raw_data_folder	     10    5   320  .  , label(`"Enter Import Identifier (RawData_????)"')
+	EDIT raw_data_id 	10   +20  420 .  ,
+	
+	// Specify Markup, Format, Style
+	// -------------------------------------------------------------------------
+	TEXT tx_markup   10   +30  200  .  , label("Markup language")
+	COMBOBOX markup  @    +20  100  .  , dropdownlist contents(markup_list) onselchange("program test") tooltip("markdoc supports several markup languages that can be used for writing the documentation. Specify the markup language that you have used in your source code.")
+	
+	TEXT tx_format   +120 -20  200  .  , label("Document format")
+	//COMBOBOX format  @    +20  100  .  , dropdownlist contents(format_list)  onselchange("program test")	////onselchange("script disablethem") //onselchange("main.master.disable")    // onselchange("program test")
+	RADIO r6         @    +20   100 ., first   label("md") onclickon("program test")
+	RADIO r1         +50    @   @ .  , middle  label("html") onclickon("program test") //option(nociforeground)
+  RADIO r2         +50    @   @  ., middle label("pdf") onclickon("program test") tooltip(`"producing PDF document requires wkhtmltopdf software, which you can install manually or by using the "install" option"')
+    
+  RADIO r4         +50    @   @ ., middle   label("docx") onclickon("program test")
+	RADIO r5         +50    @   @ ., middle   label("odt") onclickon("program test")
+	RADIO r3         +50    @   @ ., last label("tex") onclickon("program test") //onclickon("script TeXoptions")
+	
+	
+
+	// GROUPBOX
+	// -------------------------------------------------------------------------
+	GROUPBOX gb_opts 10   +35  420  305, label("Options")
+	  
+		// RIGHT COLUMN
+		// ---------------------------------------------------------------------
+		
+		// install
+		CHECKBOX install  +10  +25  -20  .  , option(install) label("Install required software") default(0) tooltip(`"markdoc requires "Pandoc" and "wkhtmltopdf" third-party software. It also requires 2 Stata packages which are "weaver" and "statax". This option automatically installs these software, if they are not already installed on your machine."')
+	
+		// replace
+		CHECKBOX replace  @    +17   @   .  , option(replace) label("Replace the existing document") default(1)
+	    
+		// master
+		CHECKBOX master @   +17   @   .  , option(master) label("Create HTML or LaTeX template") default(1) tooltip("LaTeX format requires a document template. Without the template, you will not be able to typeset the document to PDF. Usually you are required to create your own template, load the packages you need, etc. However, markdoc provides this option to facilitate writing with LaTeX and automatically creates the layout if you haven't defined it in the source file.")
+	  
+		// syntax highlighter
+		CHECKBOX statax   @    +17   @   .  , option(statax) label("Statax syntax highlighter") default(1)
+		
+	  
+		// table of content
+		CHECKBOX toc      @    +17   @   .  , option(toc) label("Table of content") 
+			   
+		// current date
+		CHECKBOX date     @    +17   @   .  , option(date) label("Add the current date") 
+			   
+		// numbered
+		CHECKBOX numbered @    +17   @   .  , option(numbered) label("Count Stata commands") tooltip("this option will number the Stata commands, 1,2,3,... ")
+	  
+		// mini
+		CHECKBOX mini  @    +17   @   .  , option(mini) label("Avoid using Pandoc or wkhtmltopdf (mini mode)") tooltip("the mini mode runs markdoc without calling third-party software such as Pandoc or wkhtmltopdf. this mode is limited and does not fully support Markdown syntax, but it can produce a document on a machine that does not have thse software installed.") //onclickon(main.mini.disable) //onclickoff(main.mini.enable)
+
+		// title of the document
+		TEXT tx_title @ +30 50 ., label(Title)
+		EDIT title 80 @ 340 18   //EDIT ed_title +30 @ 340 .
+	 
+		// Author of the document
+		TEXT tx_author 20 +20 50 ., label(Author)
+		EDIT author 80 @ 340 18  
+	 
+		// Affiliation
+		TEXT tx_affiliation 20 +20 55 ., label(Affiliation)
+		EDIT affiliation 80 @ 340 18   
+	 
+		// Address
+		TEXT tx_address 20 +20 50 ., label(Address)
+		EDIT address 80 @ 340 18  
+	 
+		// Summary
+		TEXT tx_summary  20   +20  60    ., label(Summary)
+		EDIT summary     80   @    340  36   
+		
+		// LEFT COLUMN
+		// ---------------------------------------------------------------------
+	
+		// layout
+		TEXT tx_style     220  135  200  .  , label("Select document layout style")
+		COMBOBOX style    @    +20  100   .  , dropdownlist contents(style_list)
+		
+		// layout
+		TEXT tx_template  @    +31  200  .  , label("Use layout (css, docx, tex, etc)")
+		FILE template     @    +20  200   .  , error("Open file") label(Browse...) ///
+		filter("css file|*.css|LaTeX header Template|*.tex|Microsoft Word Template|*.docx|OpenOffice Template|*.odt|All files|*.*")
+		
+		//CHECKBOX activate @    +31  200  .  , default(0) label("Adjust linesize") onclickon("program test") onclickoff("program test")
+		//SPINNER  linesize 340   @    80   .  , min(80)  max(255) default(110) tooltip("Adjust the width of your document. If the specified linesize is less than the actual width, your document will show unreasonably disjoint lines or words.")
+		
+END
+
+// -----------------------------------------------------------------------------
+// TEST PROGRAMS
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// FINAL MARKDOC COMMAND
+// =============================================================================	
+
