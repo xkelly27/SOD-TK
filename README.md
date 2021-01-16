@@ -6,6 +6,7 @@
 This toolkit is intended to ease data management on the OneDrive Ucol_data-g shared library for the University of Denver.
 
 ### Sharepoint Link
+**Note**: Must have access to Data_ucol-g (contact details below) <br / >
 https://denveru.sharepoint.com/sites/Data_ucol-g
 
 ## Requirements
