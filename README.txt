@@ -1,8 +1,8 @@
 				
 
-				   [OneDrive Data Management Tool | UCOL]
+				          [OneDrive Tool | UCOL]
 
-				        --Last updated: Jan 4 2021--
+				         --Last updated: Jan 11 2021--
 
     
 					       DESCRIPTION
@@ -29,7 +29,7 @@
 			-> code (!)			|	
 				-> ado (!)		|	
 				-> app_v1 (!)		|	
-			-> main_data (r)			|	
+			-> main_data (r)		|	
 			-> output (r)			|
 			-> reports (r)			|
 		-> ** other files **			|
@@ -43,7 +43,7 @@
 	command log - if this doesn't work, the shared library is most likely not in the correct
 	path. See 2. in the DESCRIPTION section.
 	
-	Once successfully linked, type "ucol open" to open the user interface (dialog box). (note: reports tab in progress)
+	Once successfully linked, type "ucol open" to open the UI (dialog box).
 
 					
 					LINK STATA AUTOMATICALLY ON STARTUP
