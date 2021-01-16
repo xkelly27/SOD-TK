@@ -36,7 +36,7 @@ The following requirements need to be met:	<br />
 In order to run the process and open the dialog box, run the linkOneDrive.do file found 
 in the code folder (see above). Make sure the "connected to OneDrive" icon appears in
 command log - if this doesn't work, the shared library is most likely not in the correct
-path. See 2. in the DESCRIPTION section.
+path. See 2. in the **Requirements** section
 
 Once successfully linked, type "ucol open" to open the user interface (dialog box). (note: reports tab in progress)
 
