@@ -12,12 +12,6 @@ The following requirements need to be met:
 		For MacOSX users: /Users/"user"/University of Denver/Data_ucol-g - Documents
 		For Windows users: C:\Users\"user"\OneDrive - University of Denver\Shared Documents
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-
 ## OneDrive Structure
 
 ```
@@ -52,3 +46,6 @@ the following steps.
 	On Windows: go to the following path: C:\!!!!!!!!!!!!!!!!
 4. Drop the profile.do file, and if you have STATA open, restart it
 5. On startup, you should be able to see the "connected to OneDrive" icon in the command log
+
+## Contact
+Feel free to reach out if needed at xavier.kelly@du.edu
