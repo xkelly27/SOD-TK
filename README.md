@@ -24,7 +24,7 @@ Please make sure to update tests as appropriate.
 ├── ...					
 ├── Data_ucol-g					
 │   ├── other            			
-│   ├── repository				           
+│   └── repository				           
 │   	├── code (folder for the project) 	       
 │   	├── main_data				
 |	├── output				
