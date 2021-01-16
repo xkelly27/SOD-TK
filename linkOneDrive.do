@@ -13,7 +13,6 @@ quietly {
 	if `"`c(os)'"' == "MacOSX" {
 		local root = "/Users/`c(username)'"
 		global stem = `"`root'/University of Denver/Data_ucol-g - Documents"'
-		global stata_path = "/Applications/Stata/"
 	}
 	
 	if `"`c(os)'"' == "Windows" {
@@ -32,6 +31,7 @@ quietly {
 	*/
 	
 	
+	global stata_path = "`c(sysdir_stata)'"
 	global repo_path = "$stem/repository"
 	
 	global main_data_path = "$repo_path/main_data"
@@ -55,7 +55,12 @@ quietly {
 	*/
 	
 	
-	capture confirm file "$stem"
+	/*
+		visual aid for mac in progress
+	*/
+	
+	
+	capture confirm file "$code_path/README.txt"
 	if _rc {
 		noisily {
 			di
@@ -69,9 +74,9 @@ quietly {
 		adopath + "$ado_path"
 			foreach dummy in dummy {
 				noisily di
-				noisily di as text "⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷"
-				noisily di as result "🌐     Connected to OneDrive     🌐" 
-				noisily di as text "⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷⩷"   
-		}                                              
+				noisily di as text "*	*	*	*	*	*	*"
+				noisily di as result "	   Connected to OneDrive | Data_ucol-g"
+				noisily di as text "*	*	*	*	*	*	*"
+			}                                              
 	}
 }               

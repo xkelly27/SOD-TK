@@ -26,11 +26,16 @@ program navigate
 			cd "$stata_path"
 			exit
 		}
+		if "`0'" == "output" | "`0'" == "out" {
+			cd "$output_path"
+			exit
+		}
 		
 		//add location here as needed
 		
 		else {
-			di as error "No destination provided or unrecognized destination. Current location below"
+		    di as text "*	*	*	*	*	*	*	*	*	*"
+			di as error "-> ", as text "No destination provided or unrecognized destination. Current location below"
 			pwd
 			di as text "❓ For help, type: help navigate"
 			exit
