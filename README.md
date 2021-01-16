@@ -9,8 +9,8 @@ This toolkit is intended to ease data management on the OneDrive Ucol_data-g sha
 The following requirements need to be met:	<br />
 	1. STATA (version 12 or later)	<br />
 	2. OneDrive Data_ucol-g synced at the following location on your device:	<br />
-		For MacOSX users: /Users/"user"/University of Denver/Data_ucol-g - Documents	<br />
-		For Windows users: C:\Users\"user"\OneDrive - University of Denver\Shared Documents	<br />
+		a. For MacOSX users: /Users/"user"/University of Denver/Data_ucol-g - Documents	<br />
+		b. For Windows users: C:\Users\"user"\OneDrive - University of Denver\Shared Documents	<br />
 
 ## OneDrive Structure
 
