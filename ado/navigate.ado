@@ -1,4 +1,3 @@
-//last edited jan 11 2021 6:55pm
 capture program drop navigate
 program navigate
 		
