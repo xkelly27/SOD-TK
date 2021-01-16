@@ -4,7 +4,7 @@
 
 This toolkit is intended to ease data management on the OneDrive Ucol_data-g shared library for the University of Denver.
 
-## Usage
+## Requirements
 
 The following requirements need to be met:	<br />
 	1. STATA (version 12 or later)	<br />
