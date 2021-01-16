@@ -2,7 +2,7 @@
 
 ## Description
 
-This toolkit is intended to automate and help data management on the OneDrive Ucol_data-g shared library.
+This toolkit is intended to ease data management on the OneDrive Ucol_data-g shared library.
 
 ## Usage
 
