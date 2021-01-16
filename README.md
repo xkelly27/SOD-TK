@@ -21,14 +21,14 @@ Please make sure to update tests as appropriate.
 ## OneDrive Structure
 ```
 .
-├── ...						<br />
-├── Data_ucol-g					<br />
-│   ├── other            			<br />
-│   ├── repository				<br />           
-│   	├── code (folder for the project) 	<br />       
-│   	├── main_data				<br />
-|	├── output				<br />
-│   	└── reports				<br />
+├── ...					
+├── Data_ucol-g					
+│   ├── other            			
+│   ├── repository				           
+│   	├── code (folder for the project) 	       
+│   	├── main_data				
+|	├── output				
+│   	└── reports				
 	
 ```
 
