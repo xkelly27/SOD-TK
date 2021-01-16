@@ -39,7 +39,7 @@ in the code folder (see above). Make sure the "connected to OneDrive" icon appea
 command log - if this doesn't work, the shared library is most likely not in the correct
 path. See 2. in the **Requirements** section
 
-Once successfully linked, type "ucol open" to open the user interface (dialog box). (note: reports tab in progress)
+To open the user interface (dialog box), type "ucol open"
 
 ### Auto link on startup
 
