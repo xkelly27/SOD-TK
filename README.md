@@ -1,4 +1,4 @@
-# 🛠☁️ STATA OneDrive Tool | UCOL
+# 🛠☁️ STATA OneDrive Toolkit | UCOL
 
 ## Description
 
