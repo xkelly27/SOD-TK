@@ -19,7 +19,7 @@ Please make sure to update tests as appropriate.
 
 
 ## OneDrive Structure
-
+```
 .
 ├── ...						<br />
 ├── Data_ucol-g					<br />
@@ -30,7 +30,7 @@ Please make sure to update tests as appropriate.
 |	├── output				<br />
 │   	└── reports				<br />
 	
-
+```
 
 ## Linking STATA and the repository
 
