@@ -56,4 +56,4 @@ the following steps.
 List of commands will be uploaded shortly
 
 ## Contact
-Feel free to reach out if needed at xavier.kelly@du.edu
+Feel free to reach out at xavier.kelly@du.edu
