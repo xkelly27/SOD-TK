@@ -1,8 +1,8 @@
-# UCOL OneDrive Data Management Toolkit | University of Denver
+# 🛠 UCOL OneDrive Data Management Toolkit
 
 ## Description
 
-This toolkit is intended to ease data management on the OneDrive Ucol_data-g shared library.
+This toolkit is intended to ease data management on the OneDrive Ucol_data-g shared library for the University of Denver.
 
 ## Usage
 
@@ -42,7 +42,7 @@ If you'd like to avoid having to run linkOneDrive.do every time you start STATA,
 the following steps.
 1. MAKE A COPY of linkOneDrive.do file (found in repository/code)
 2. Rename the file profile.do
-3. 	On Mac: go to the following path: /Applications/Stata
+3. Go to the following path: /Applications/Stata
 	On Windows: go to the following path: C:\!!!!!!!!!!!!!!!!
 4. Drop the profile.do file, and if you have STATA open, restart it
 5. On startup, you should be able to see the "connected to OneDrive" icon in the command log
