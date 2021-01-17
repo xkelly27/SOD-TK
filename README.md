@@ -1,3 +1,6 @@
+
+<div style="text-align:center"><img src="university-of-denver-shield.svg" width="50"/></div>
+
 # 🛠☁️ Stata OneDrive Toolkit | UCOL
 
 ## Description
