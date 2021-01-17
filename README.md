@@ -1,6 +1,7 @@
 # 🛠☁️ Stata OneDrive Toolkit | UCOL
-![status](https://img.shields.io/badge/status-in__progress-orange)
 ![sharepoint](https://img.shields.io/badge/Microsoft_SharePoint-0078D4?style=for-the-badge&logo=microsoft-sharepoint&logoColor=white)
+![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![mac](https://img.shields.io/badge/Apple-999999?style=for-the-badge&logo=apple&logoColor=white)
 
 ## Description
 
