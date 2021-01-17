@@ -9,7 +9,7 @@
 This toolkit is intended to ease data management on the OneDrive ```Data_ucol-g``` shared library for the University of Denver.
 
 ### Sharepoint Link
-https://denveru.sharepoint.com/sites/Data_ucol-g
+[Data_ucol-g](https://denveru.sharepoint.com/sites/Data_ucol-g)
 > Note: Must have access to ```Data_ucol-g``` (contact details below)
 
 ## Requirements
