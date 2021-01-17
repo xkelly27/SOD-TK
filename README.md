@@ -56,5 +56,8 @@ the following steps.
 ## Commands
 List of commands will be uploaded shortly
 
+## Demo
+![gif1](name-of-giphy.gif)
+
 ## Contact
 Feel free to reach out at xavier.kelly@du.edu
