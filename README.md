@@ -37,8 +37,10 @@ The following requirements need to be met:	<br />
 
 ## Linking STATA and the repository
 
-In order to run the process and open the dialog box, run the linkOneDrive.do file found 
-in the code folder (see above). Make sure the "connected to OneDrive" icon appears in
+In order to run the process and open the dialog box, run the ```linkOneDrive.do``` file  
+in the code folder ```/repository/code```.
+
+A message "connected to OneDrive" should appear in
 command log - if this doesn't work, the shared library is most likely not in the correct
 path. See 2. in the ```Requirements``` section
 
