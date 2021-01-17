@@ -1,6 +1,5 @@
 # 🛠☁️ STATA OneDrive Toolkit | UCOL
 ![status](https://img.shields.io/badge/status-in__progress-orange)
-![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
 ## Description
 
