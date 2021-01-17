@@ -17,8 +17,8 @@ https://denveru.sharepoint.com/sites/Data_ucol-g
 The following requirements need to be met:	<br />
 1. STATA (version 12 or later)	<br />
 2. OneDrive ```Data_ucol-g``` synced at the following location on your device:
-   - For MacOSX users: ```/Users/**user**/University of Denver/Data_ucol-g - Documents```
-   - Windows users: ```C:\Users\ **user**\OneDrive - University of Denver\Shared Documents```
+   - For MacOSX users: ```/Users/john_doe/University of Denver/Data_ucol-g - Documents```
+   - Windows users: ```C:\Users\john_doe\OneDrive - University of Denver\Shared Documents```
 
 ## OneDrive Structure
 
@@ -40,7 +40,7 @@ The following requirements need to be met:	<br />
 In order to run the process and open the dialog box, run the linkOneDrive.do file found 
 in the code folder (see above). Make sure the "connected to OneDrive" icon appears in
 command log - if this doesn't work, the shared library is most likely not in the correct
-path. See 2. in the **Requirements** section
+path. See 2. in the ```Requirements``` section
 
 To open the user interface (dialog box), type "ucol open"
 
