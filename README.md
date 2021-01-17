@@ -1,8 +1,8 @@
 
 <p align="center"><img src="university-of-denver-shield.svg" width="70"/></p>
 
-# 🛠☁️ Stata OneDrive Toolkit | UCOL | ![status](https://img.shields.io/badge/status-in__progress-orange)
-
+# 🛠☁️ Stata OneDrive Toolkit | UCOL 
+![status](https://img.shields.io/badge/status-in__progress-orange)
 
 ## Description
 
@@ -10,7 +10,7 @@ This toolkit is intended to ease data management on the OneDrive Ucol_data-g sha
 
 ### Sharepoint Link
 https://denveru.sharepoint.com/sites/Data_ucol-g
-**Note**: Must have access to Data_ucol-g (contact details below)
+> Note: Must have access to Data_ucol-g (contact details below)
 
 ## Requirements
 
