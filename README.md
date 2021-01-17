@@ -1,5 +1,5 @@
 
-<div style="text-align:center"><img src="university-of-denver-shield.svg" width="50"/></div>
+<center><img src="university-of-denver-shield.svg" width="50"/></center>
 
 # 🛠☁️ Stata OneDrive Toolkit | UCOL
 
