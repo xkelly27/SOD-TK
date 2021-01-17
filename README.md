@@ -51,8 +51,8 @@ the following steps.
 1. MAKE A COPY of linkOneDrive.do file (found in repository/code)
 2. Rename the file profile.do
 3. Depending on operating system, go to the following path:
-   - Mac: /Applications/Stata <br />
-   - Windows: C:\ProgramFiles\Stata16 | (Note: the path will change according to Stata version (e.g Sata14))
+   - Mac: ```/Applications/Stata``` <br />
+   - Windows: ```C:\ProgramFiles\Stata...``` | (Note: the path will change according to Stata version (e.g Sata14))
 4. Drop the profile.do file, and if you have STATA open, restart it
 5. On startup, you should be able to see the "connected to OneDrive" icon in the command log
 
@@ -63,4 +63,4 @@ List of commands will be uploaded shortly
 ![gif1](readme_gif1.gif)
 
 ## Contact
-Feel free to reach out at xavier.kelly@du.edu
+Feel free to reach out at xavier.kelly@du.edu | [LinkedIn](https://www.linkedin.com/in/xavierpkelly/)
