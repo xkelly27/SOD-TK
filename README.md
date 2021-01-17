@@ -56,7 +56,7 @@ the following steps.
 ## Commands
 List of commands will be uploaded shortly
 
-## Demo
+## Example
 ![gif1](readme_gif1.gif)
 
 ## Contact
