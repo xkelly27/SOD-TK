@@ -1,5 +1,4 @@
 # 🛠☁️ Stata OneDrive Toolkit | UCOL
-![sharepoint](https://img.shields.io/badge/Microsoft_SharePoint-0078D4?style=for-the-badge&logo=microsoft-sharepoint&logoColor=white)
 
 ## Description
 
