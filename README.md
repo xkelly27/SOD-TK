@@ -15,7 +15,7 @@ This toolkit is intended to ease data management on the OneDrive ```Data_ucol-g`
 ## Requirements
 
 The following requirements need to be met:	<br />
-1. STATA (version 12 or later)	<br />
+1. Stata/IC, Stata/SE or Stata/MP (version 12 or later)	<br />
 2. OneDrive ```Data_ucol-g``` synced at the following location on your device:
    - For MacOSX users: ```/Users/john_doe/University of Denver/Data_ucol-g - Documents```
    - Windows users: ```C:\Users\john_doe\OneDrive - University of Denver\Shared Documents```
