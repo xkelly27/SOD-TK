@@ -57,7 +57,7 @@ the following steps.
 List of commands will be uploaded shortly
 
 ## Demo
-![gif1](name-of-giphy.gif)
+![gif1](readme_gif1.gif)
 
 ## Contact
 Feel free to reach out at xavier.kelly@du.edu
