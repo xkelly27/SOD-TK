@@ -63,4 +63,4 @@ List of commands will be uploaded shortly
 ![gif1](readme_gif1.gif)
 
 ## Contact
-[DU Email](xavier.kelly@du.edu) | [LinkedIn](https://www.linkedin.com/in/xavierpkelly/)
+xavier.kelly@du.edu | [LinkedIn](https://www.linkedin.com/in/xavierpkelly/)
