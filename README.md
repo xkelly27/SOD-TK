@@ -1,8 +1,8 @@
 
 <p align="center"><img src="university-of-denver-shield.svg" width="70"/></p>
 
-<p align="center"># 🛠☁️ Stata OneDrive Toolkit | UCOL </p>
-<p align="center">![status](https://img.shields.io/badge/status-in__progress-orange)</p>
+# 🛠☁️ Stata OneDrive Toolkit | UCOL
+![status](https://img.shields.io/badge/status-in__progress-orange)
 
 ## Description
 
