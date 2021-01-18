@@ -35,7 +35,7 @@ The following requirements need to be met:	<br />
 	
 ```
 
-## Linking STATA and the repository
+## Link Stata and ```Data_ucol-g```
 
 In order to run the process and open the dialog box, run the ```linkOneDrive.do``` file  
 in the code folder ```/repository/code```.
