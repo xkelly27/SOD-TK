@@ -62,7 +62,7 @@ the following steps.
 List of commands will be uploaded shortly
 
 ## Example
-![gif1](readme_gif1.gif)
+![gif1](docs/readme_gif1.gif)
 
 ## Contact
 xavier.kelly@du.edu | [LinkedIn](https://www.linkedin.com/in/xavierpkelly/)
