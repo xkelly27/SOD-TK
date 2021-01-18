@@ -44,7 +44,7 @@ A message "connected to OneDrive" should appear in
 command log - if this doesn't work, the shared library is most likely not in the correct
 path. See ```Requirements -> 2.``` 
 
-To open the user interface (dialog box), type "ucol open"
+> Note: to open the user interface (dialog box), type "ucol open"
 
 ### Auto link on startup
 
