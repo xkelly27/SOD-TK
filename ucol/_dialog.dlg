@@ -1,0 +1,164 @@
+VERSION 16.0
+
+POSITION . . 410 420
+
+
+// -----------------------------------------------------------------------------
+// LISTS
+// =============================================================================
+
+LIST import_method_list
+BEGIN
+	--Select--
+	📁 RawData_####
+END
+
+LIST save_options
+BEGIN
+	--Select--
+	🖥 Desktop
+	⬇️ Downloads
+	📑 Documents
+END
+
+
+// -----------------------------------------------------------------------------
+// MAIN PAGE BUTTONS
+// =============================================================================
+OK ok1,      label("OK")
+CANCEL can1, label("Cancel")
+SUBMIT sub1, label("Submit")
+RESET res1
+
+
+DIALOG main, label("OneDrive Tool | UCOL") tabtitle(➕ Add Data)
+	BEGIN
+		TEXT	tx_import       10    10    390     ., ///
+			label(⚙️ Choose Method)
+			
+		COMBOBOX import_method  @    +20  200  .  , ///
+			dropdownlist contents(import_method_list)
+		TEXT tx_raw +250 @ 50 ., ///
+			label("Identifier")
+		EDIT raw_identifier 	+60   @  50 .  ,	
+		GROUPBOX gb_opts      10     +35   390       135, ///
+			label("Choose Import Steps")
+			CHECKBOX ck_sr     +10   +20   -20     ., ///
+				option(sr) ///
+				label("Add Student Roster")
+			CHECKBOX ck_grad    @     +25   @       ., ///
+				option(grad) ///
+				label("Add Graduates")
+			CHECKBOX ck_output @     +25   @       ., ///
+				option(output) ///
+				label("Create Output")
+			TEXT tx_separate @ +15 @ ., ///
+				label("---------------------------")
+			CHECKBOX ck_all @ +15 @ ., ///
+				option(all) ///
+				default(0) ///
+				label("Select All / Main Process") ///
+				onclickon(script main_gb_all_off) ///
+				onclickoff(script main_gb_all_on)
+	END
+
+SCRIPT main_gb_all_off
+	BEGIN
+	   main.ck_sr.seton
+	   main.ck_grad.seton
+	   main.ck_output.seton
+	END
+
+SCRIPT main_gb_all_on
+	BEGIN
+	   main.ck_sr.setoff
+	   main.ck_grad.setoff
+	   main.ck_output.setoff
+	END
+
+SCRIPT turn_ck_off
+	BEGIN
+		main.ck_all.seton
+		main.ck_all.setoff
+	END
+	
+SCRIPT save_options_off
+BEGIN
+   sub.save_pref.hide
+   sub.save_pref_desc.hide
+END
+
+SCRIPT save_options_on
+BEGIN
+   sub.save_pref.show
+   sub.save_pref_desc.show
+END
+
+
+DIALOG sub, tabtitle(📊 Reports)
+	BEGIN
+	GROUPBOX gb_opts      10     10   390       110, ///
+		label("Choose Option(s)")
+		CHECKBOX ck_sr     +10   +20   -20     ., ///
+			option(disn) ///
+			label("Disney")
+		CHECKBOX ck_grad    @     +25   @       ., ///
+			option(xcust) ///
+			label("other")
+		TEXT tx_separate @ +15 @ ., ///
+			label("------------------")
+		CHECKBOX ck_all @ +15 @ ., ///
+			option(all) ///
+			default(0) ///
+			label("Select All") ///
+			onclickon(script report_gb_all_off) ///
+			onclickoff(script report_gb_all_on)
+			
+		CHECKBOX save_box    15 +45 110 .,                            ///
+           label(💾 Save Locally)                            ///
+           onclickon(script save_options_on)                       ///
+           onclickoff(script save_options_off)
+		TEXT save_pref_desc +180 @ @ ., ///
+			label(📍 Location)
+		COMBOBOX save_pref     +80   @  @    .,                            ///
+           contents(save_options) dropdownlist
+		
+END
+
+DIALOG sub2, tabtitle(💬 Feedback)
+	BEGIN
+		TEXT save_pref 10 10 400 ., ///
+			label("Please report problems/requests/feedback below")
+		EDIT feedback     @  +20    340  100   
+		
+END              
+
+
+PROGRAM command
+	BEGIN
+		if main.import_method.iseq("RawData_####") {
+			if main.ck_sr {
+				put "do add_sr "
+				put main.raw_identifier
+				stata
+				put "do update_ucol"
+				stata
+				put "do update_du"
+				stata
+			}
+			if main.ck_grad {
+				put "do add_grad "
+				put main.vl_import
+				stata
+				put "do update_grad"
+				stata
+			}
+			if main.ck_output {
+				put "do term_counter"
+				stata
+				put "do output"
+				stata
+				clear
+			}
+		}
+	END

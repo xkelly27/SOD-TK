@@ -14,18 +14,18 @@ program ucol
 
 		if "`0'" == "connect" | "`0'" == "Connect" | "`0'" == "link"   {
 			navigate code
-			do linkOneDrive
+			noi do linkOneDrive
+			exit
 		}
-			
-		if "`0'" == "commands" | "`0'" == "help" | "`0'" == "list" {
-			di as error "ucol command list:", as text "open | connect | help"
-		}
+		//fix	
+		//	if "`0'" == "commands" | "`0'" == "help" | "`0'" == "list" {
+		//		di as error "ucol command list:", as text "[open, connect, help]"
+		//	}
 			
 		else {
 			noisily {
 				di as error "-> ", as text "No command provided or unrecognized command after ucol."
-				di as error "-> ", di as smcl  "Click to open the dialog box: "  `"{ucol open}"'
-				di as text "❓ For help, type: help ucol"
+				di as text "❓ For list of cmds, type: ucol help"
 				exit
 			}
 		}
