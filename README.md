@@ -1,24 +1,24 @@
 
 <p align="center"><img src="docs/university-of-denver-shield.svg" width="70"/></p>
-<p align="center">🛠☁️</p>
+<p align="center">🛠 | ☁️</p>
 
 # Stata OneDrive Toolkit | University College
 ![status](https://img.shields.io/badge/status-in__progress-orange)
 
 ## Description
 
-This toolkit is intended to ease data management on the OneDrive ```Data_ucol-g``` shared library for the University of Denver.
+This toolkit is intended to ease data management on the OneDrive ```ucol_data``` shared library for the University of Denver.
 
 ### Sharepoint Link
-[Data_ucol-g](https://denveru.sharepoint.com/sites/Data_ucol-g)
-> Note: Must have access to ```Data_ucol-g``` (contact details below)
+[ucol_data-g](https://denveru.sharepoint.com/sites/Data_ucol-g)
+> Note: Must have access to ```ucol_data``` (contact details below)
 
 ## Requirements
 
 The following requirements need to be met:	<br />
 1. Stata/IC, Stata/SE or Stata/MP (version 12 or later)	<br />
-2. OneDrive ```Data_ucol-g``` synced at the following location on your device:
-   - For MacOSX users: ```/Users/john_doe/University of Denver/Data_ucol-g - Documents```
+2. OneDrive ```ucol_data``` synced at the following location on your device:
+   - For MacOSX users: ```/Users/john_doe/University of Denver/ucol_data-g - Documents```
    - Windows users: ```C:\Users\john_doe\OneDrive - University of Denver\Shared Documents```
 
 ## OneDrive Structure
@@ -36,7 +36,7 @@ The following requirements need to be met:	<br />
 	
 ```
 
-## Link Stata and ```Data_ucol-g```
+## Link Stata and ```ucol_data```
 
 In order to run the process and open the dialog box, run the ```linkOneDrive.do``` file  
 in the code folder ```/repository/code```.
