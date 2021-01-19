@@ -29,7 +29,7 @@ The following requirements need to be met:	<br />
 ├── ucol_data-g					
 │   ├── other            			
 │   └── repository				           
-│   	├── code (toolkit folder) 	       
+│   	├── code (SOD-TK folder) 	       
 │   	├── main_data				
 |	├── output				
 │   	└── reports				
