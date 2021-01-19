@@ -13,7 +13,7 @@ program ucol
 		}
 
 		if "`0'" == "connect" | "`0'" == "Connect" | "`0'" == "link"   {
-			navigate repo
+			navigate code
 			do linkOneDrive
 		}
 			
