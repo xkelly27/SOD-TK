@@ -60,7 +60,11 @@ the following steps.
 5. On startup, you should be able to see the "connected to OneDrive" icon in the command log
 
 ## Commands
-List of commands will be uploaded shortly
+| Command        | Description   |
+| -------------  | ------------- |
+| ```ucol```     | main tools    |
+| ```navigate``` | move around   |
+| ```goodbye```  | leave         |
 
 ## Example
 ![gif1](docs/readme_gif1.gif)
