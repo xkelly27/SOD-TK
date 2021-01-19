@@ -26,7 +26,7 @@ The following requirements need to be met:	<br />
 ```
 .
 ├── ...					
-├── Data_ucol-g					
+├── ucol_data-g					
 │   ├── other            			
 │   └── repository				           
 │   	├── code (toolkit folder) 	       
