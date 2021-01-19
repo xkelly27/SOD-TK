@@ -60,15 +60,12 @@ quietly {
 	*/
 	
 	
-	capture confirm file "$repo_path/linkOneDrive.do"
+	capture confirm file "$code_path/linkOneDrive.do"
 	if _rc {
-		noisily {
-			di
-			di "ERROR: OneDrive not synced or at incorrect location"
-			di "The following location should be used"
-			di "$stem"
+			noi di
+			noi di "OneDrive not synced or Synced at incorrect location"
+			noi di as error "Correct location ->", as text "$stem"
 			exit
-		}	
 	}
 	else {
 		adopath + "$ado_path"
