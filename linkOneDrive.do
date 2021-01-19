@@ -12,7 +12,7 @@ quietly {
 
 	if `"`c(os)'"' == "MacOSX" {
 		local root = "/Users/`c(username)'"
-		global stem = `"`root'/University of Denver/Data_ucol-g - Documents"'
+		global stem = `"`root'/University of Denver/ucol_data-g - Documents"'
 	}
 	
 	if `"`c(os)'"' == "Windows" {
@@ -60,7 +60,7 @@ quietly {
 	*/
 	
 	
-	capture confirm file "$code_path/README.txt"
+	capture confirm file "$repo_path/linkOneDrive.do"
 	if _rc {
 		noisily {
 			di
