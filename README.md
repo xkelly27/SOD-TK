@@ -2,7 +2,7 @@
 <p align="center"><img src="docs/university-of-denver-shield.svg" width="70"/></p>
 <p align="center">🛠 | ☁️</p>
 
-# Stata OneDrive Toolkit | University College
+# SOD-TK | Stata OneDrive Toolkit | University College
 ![status](https://img.shields.io/badge/status-in__progress-orange)
 
 ## Description
