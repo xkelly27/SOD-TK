@@ -30,7 +30,11 @@ program navigate
 			cd "$output_path"
 			exit
 		}
-		
+		if "`0'" == "data" | "`0'" == "main data" {
+			cd "$main_data_path"
+			exit
+		}
+
 		//add location here as needed
 		
 		else {

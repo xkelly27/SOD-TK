@@ -72,7 +72,7 @@ quietly {
 			foreach dummy in dummy {
 				noisily di
 				noisily di as text "*	*	*	*	*	*	*"
-				noisily di as result "	   Connected to OneDrive | Data_ucol-g"
+				noisily di as result "	   Connected to OneDrive | ucol_data-g"
 				noisily di as text "*	*	*	*	*	*	*"
 			}                                              
 	}
