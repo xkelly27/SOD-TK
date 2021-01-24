@@ -1,6 +1,5 @@
 
 <p align="center"><img src="docs/university-of-denver-shield.svg" width="70"/></p>
-<p align="center">🛠 | ☁️</p>
 
 # SOD-TK | Stata OneDrive Toolkit | University College
 ![status](https://img.shields.io/badge/status-working-green)
