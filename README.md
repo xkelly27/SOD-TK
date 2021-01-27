@@ -69,4 +69,4 @@ the following steps.
 ![gif1](docs/readme_gif1.gif)
 
 ## Contact
-xavier.kelly@du.edu | [LinkedIn](https://www.linkedin.com/in/xavierpkelly/)
+xavier.kelly@du.edu
