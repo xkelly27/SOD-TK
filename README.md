@@ -1,8 +1,7 @@
 
 <p align="center"><img src="docs/university-of-denver-shield.svg" width="70"/></p>
 
-# SOD-TK | Stata OneDrive Toolkit | University College
-![status](https://img.shields.io/badge/status-working-green)
+# Stata OneDrive Toolkit
 
 ## Description
 
@@ -46,17 +45,6 @@ path. See ```Requirements -> 2.```
 
 > Note: to open the user interface (dialog box), type "ucol open"
 
-### Auto link on startup
-
-If you'd like to avoid having to run ```linkOneDrive.do``` every time you start STATA, complete
-the following steps.
-1. Make a COPY of ```linkOneDrive.do``` file (found in repository/code) and save in a convenient location
-2. Rename the file ```profile.do```
-3. Depending on your operating system, go to the following path:
-   - Mac: ```/Applications/Stata``` <br />
-   - Windows: ```C:\ProgramFiles\Stata...``` 
-4. Drop the ```profile.do``` file, and if you have STATA open, restart it
-5. On startup, you should be able to see the "connected to OneDrive" icon in the command log
 
 ## Commands
 | Command        | Description   |
